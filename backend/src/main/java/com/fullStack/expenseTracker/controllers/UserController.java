@@ -17,7 +17,10 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = {
+        "http://localhost:3000",
+        "https://spendwise-webapp1.vercel.app"
+})
 @RestController
 @RequestMapping("/mywallet/user")
 public class UserController {

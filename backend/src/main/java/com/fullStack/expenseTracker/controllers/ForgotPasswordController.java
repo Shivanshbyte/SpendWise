@@ -13,7 +13,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = {
+        "http://localhost:3000",
+        "https://spendwise-webapp1.vercel.app"
+})
 @RequestMapping("/mywallet/auth/forgotPassword")
 public class ForgotPasswordController {
 

@@ -27,7 +27,10 @@ import java.util.Base64;
 import java.util.List;
 import java.util.stream.Collectors;
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = {
+        "http://localhost:3000",
+        "https://spendwise-webapp1.vercel.app"
+})
 @RestController
 @RequestMapping("/mywallet/auth")
 public class SignInController {
